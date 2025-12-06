@@ -1,1 +1,65 @@
 <h1> danish sheikh study in aptech </h1>
+<h2>User Feedback Form</h2>
+
+<!-- The form action attribute specifies where to send the form-data when a form is submitted -->
+<form action="/submit_page" method="POST">
+    
+    <!-- Password Input -->
+    <p>
+        <label for="user_password">Password:</label>
+        <!-- input type="password" obscures the characters for security -->
+        <input type="password" id="user_password" name="user_password" required>
+    </p>
+
+    <!-- Message/Textarea Input -->
+    <p>
+        <label for="message_box">Your Message:</label><br>
+        <!-- <textarea> is used for multi-line text input, perfect for messages -->
+        <textarea id="message_box" name="message_box" rows="4" cols="50"></textarea>
+    </p>
+
+    <!-- Checkbox Input (allows multiple selections) -->
+    <p>
+        **Select your favorite fruits:** (Select one or more)
+        <ul>
+            <li>
+                <input type="checkbox" id="fruit1" name="fruits" value="apple">
+                <label for="fruit1">Apple</label>
+            </li>
+            <li>
+                <input type="checkbox" id="fruit2" name="fruits" value="banana">
+                <label for="fruit2">Banana</label>
+            </li>
+            <li>
+                <input type="checkbox" id="fruit3" name="fruits" value="cherry">
+                <label for="fruit3">Cherry</label>
+            </li>
+        </ul>
+    </p>
+
+    <!-- Radio Button Input (allows only one selection from a group) -->
+    <p>
+        **Select your gender:** (Select one only)
+        <ul>
+            <li>
+                <!-- Radio buttons in the same group must share the same 'name' attribute -->
+                <input type="radio" id="gender_male" name="gender" value="male">
+                <label for="gender_male">Male</label>
+            </li>
+            <li>
+                <input type="radio" id="gender_female" name="gender" value="female">
+                <label for="gender_female">Female</label>
+            </li>
+            <li>
+                <input type="radio" id="gender_other" name="gender" value="other">
+                <label for="gender_other">Other</label>
+            </li>
+        </ul>
+    </p>
+
+    <!-- Submit Button -->
+    <p>
+        <input type="submit" value="Submit Form">
+    </p>
+
+</form>
